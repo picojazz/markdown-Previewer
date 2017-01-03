@@ -1,0 +1,28 @@
+body{
+    background-color: #95a5a6 !important;
+}
+.titre{
+    //padding-bottom: 5px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    color: white;
+    //background-color: #e7e5e4;
+    font-family: 'Gabriela', serif;
+    font-size: 50px;
+    letter-spacing: .10em;
+    //text-align: center;
+    text-shadow:
+        1px -1px 0 #767676,
+        -1px 2px 1px #767474;
+
+}.text{
+    width: auto;
+    height: 80vh;
+}.form-control{
+    background-color: #ecf0f1 !important; 
+}.markdown{
+    height: 75vh;
+    padding : 15px;
+    background-color: #ecf0f1;
+    overflow:scroll;
+}

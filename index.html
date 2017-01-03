@@ -4,19 +4,18 @@
 	<meta charset="UTF-8">
 	<title>Picojazz Markdown Previewer</title>
 	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/js/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.8/vue.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/vue-resource/1.0.3/vue-resource.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.5.5/showdown.min.js"></script>
 </head>
 <body>
-<div class="container">
-<div class="text-center"> Picojazz Markdown Previewer </div>
+<div class="container" id="mark">
+<h1 class="text-center titre"> Picojazz Markdown Previewer </h1>
 	<div class="col-md-6">
-		
+		<textarea class="form-control" rows="22" v-model="text"></textarea>
 	</div>
 	<div class="col-md-6">
-		
-	</div>
+		<div v-html="textMark" class="markdown"></div>	</div>
 </div>
 	
 
